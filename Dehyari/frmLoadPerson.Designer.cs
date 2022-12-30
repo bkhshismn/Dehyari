@@ -1,6 +1,6 @@
 ﻿namespace Dehyari
 {
-    partial class LoadPerson
+    partial class frmLoadPerson
     {
         /// <summary>
         /// Required designer variable.
@@ -204,14 +204,14 @@
             this.btnAdd.Text = "جدید";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // LoadPerson
+            // frmLoadPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1282, 653);
             this.Controls.Add(this.groupPanel1);
             this.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.Name = "LoadPerson";
+            this.Name = "frmLoadPerson";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن اشخاص";

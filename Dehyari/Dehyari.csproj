@@ -66,11 +66,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbBaha.cs" />
-    <Compile Include="AddPerson.cs">
+    <Compile Include="frmAddPerson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddPerson.Designer.cs">
-      <DependentUpon>AddPerson.cs</DependentUpon>
+    <Compile Include="frmAddPerson.Designer.cs">
+      <DependentUpon>frmAddPerson.cs</DependentUpon>
     </Compile>
     <Compile Include="BedNo.cs" />
     <Compile Include="Bime.cs" />
@@ -79,6 +79,12 @@
     <Compile Include="DehyariContext.cs" />
     <Compile Include="DehyariHesab.cs" />
     <Compile Include="Delivery.cs" />
+    <Compile Include="frmJaygahZamin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJaygahZamin.Designer.cs">
+      <DependentUpon>frmJaygahZamin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPersonDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -90,11 +96,11 @@
     <Compile Include="IsMarried.cs" />
     <Compile Include="IsSarparastKhanevar.cs" />
     <Compile Include="JaygahZamin.cs" />
-    <Compile Include="LoadPerson.cs">
+    <Compile Include="frmLoadPerson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoadPerson.Designer.cs">
-      <DependentUpon>LoadPerson.cs</DependentUpon>
+    <Compile Include="frmLoadPerson.Designer.cs">
+      <DependentUpon>frmLoadPerson.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -109,6 +115,18 @@
     <Compile Include="Migrations\202211261739318_DeleteSarparasgtkhanevadAndKhanedarField.cs" />
     <Compile Include="Migrations\202211261739318_DeleteSarparasgtkhanevadAndKhanedarField.designer.cs">
       <DependentUpon>202211261739318_DeleteSarparasgtkhanevadAndKhanedarField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212131707063_AddNerkhAb.cs" />
+    <Compile Include="Migrations\202212131707063_AddNerkhAb.designer.cs">
+      <DependentUpon>202212131707063_AddNerkhAb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212131848123_FluenAPITERST.cs" />
+    <Compile Include="Migrations\202212131848123_FluenAPITERST.designer.cs">
+      <DependentUpon>202212131848123_FluenAPITERST.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202212131854251_FluenAPITERST1.cs" />
+    <Compile Include="Migrations\202212131854251_FluenAPITERST1.designer.cs">
+      <DependentUpon>202212131854251_FluenAPITERST1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="NameSadere.cs" />
@@ -126,14 +144,17 @@
     <Compile Include="sysdiagram.cs" />
     <Compile Include="Tahsilatt.cs" />
     <Compile Include="Zamin.cs" />
-    <EmbeddedResource Include="AddPerson.resx">
-      <DependentUpon>AddPerson.cs</DependentUpon>
+    <EmbeddedResource Include="frmAddPerson.resx">
+      <DependentUpon>frmAddPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJaygahZamin.resx">
+      <DependentUpon>frmJaygahZamin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPersonDetails.resx">
       <DependentUpon>frmPersonDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoadPerson.resx">
-      <DependentUpon>LoadPerson.cs</DependentUpon>
+    <EmbeddedResource Include="frmLoadPerson.resx">
+      <DependentUpon>frmLoadPerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -143,6 +164,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202211261739318_DeleteSarparasgtkhanevadAndKhanedarField.resx">
       <DependentUpon>202211261739318_DeleteSarparasgtkhanevadAndKhanedarField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212131707063_AddNerkhAb.resx">
+      <DependentUpon>202212131707063_AddNerkhAb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212131848123_FluenAPITERST.resx">
+      <DependentUpon>202212131848123_FluenAPITERST.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202212131854251_FluenAPITERST1.resx">
+      <DependentUpon>202212131854251_FluenAPITERST1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

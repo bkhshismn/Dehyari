@@ -40,6 +40,7 @@ namespace Dehyari
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Configurations.Add(new PersonConfig());
             modelBuilder.Entity<Delivery>()
                 .HasMany(e => e.SMS)
                 .WithOptional(e => e.Delivery)
@@ -48,6 +49,11 @@ namespace Dehyari
             modelBuilder.Entity<NoDaryaft>()
                 .HasOptional(e => e.Daryaft)
                 .WithRequired(e => e.NoDaryaft);
+
+            //modelBuilder.Entity<Sex>()
+            //    .HasMany(e => e.Sex1)
+            //    .WithOptional(e => e.S)
+            //    .HasForeignKey(e => e.);
         }
     }
 }

@@ -19,28 +19,20 @@ namespace Dehyari
 
         private void btnAddPerson_Click(object sender, EventArgs e)
         {
-        new LoadPerson().Show();
+        new frmLoadPerson().Show();
 
         }
 
-        private void panelEx1_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void panelEx3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelEx2_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void expandablePanel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnJaygahZamin_Click(object sender, EventArgs e)
+        {
+            new frmJaygahZamin().Show();
         }
     }
 }

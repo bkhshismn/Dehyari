@@ -28,10 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.lblBime = new DevComponents.DotNetBar.LabelX();
+            this.lblMetraj = new DevComponents.DotNetBar.LabelX();
+            this.lblJensiat = new DevComponents.DotNetBar.LabelX();
+            this.lblSarparast = new DevComponents.DotNetBar.LabelX();
+            this.lblTaahol = new DevComponents.DotNetBar.LabelX();
+            this.lblCodePosti = new DevComponents.DotNetBar.LabelX();
+            this.lblSahebKhane = new DevComponents.DotNetBar.LabelX();
+            this.lblCodeMelli = new DevComponents.DotNetBar.LabelX();
+            this.lblTahsilat = new DevComponents.DotNetBar.LabelX();
+            this.lblTelSabet = new DevComponents.DotNetBar.LabelX();
+            this.lblMobile = new DevComponents.DotNetBar.LabelX();
+            this.lblName = new DevComponents.DotNetBar.LabelX();
+            this.lblTarikhTavalod = new DevComponents.DotNetBar.LabelX();
+            this.lblShomareShenasname = new DevComponents.DotNetBar.LabelX();
             this.lblx = new DevComponents.DotNetBar.LabelX();
             this.labelX13 = new DevComponents.DotNetBar.LabelX();
+            this.lblNamePdar = new DevComponents.DotNetBar.LabelX();
             this.labelX12 = new DevComponents.DotNetBar.LabelX();
             this.labelX15 = new DevComponents.DotNetBar.LabelX();
             this.labelX1 = new DevComponents.DotNetBar.LabelX();
@@ -45,29 +61,32 @@
             this.labelX7 = new DevComponents.DotNetBar.LabelX();
             this.labelX6 = new DevComponents.DotNetBar.LabelX();
             this.labelX8 = new DevComponents.DotNetBar.LabelX();
-            this.lblName = new DevComponents.DotNetBar.LabelX();
-            this.lblNamePdar = new DevComponents.DotNetBar.LabelX();
-            this.lblCodeMelli = new DevComponents.DotNetBar.LabelX();
-            this.lblShomareShenasname = new DevComponents.DotNetBar.LabelX();
-            this.lblTarikhTavalod = new DevComponents.DotNetBar.LabelX();
-            this.lblCodePosti = new DevComponents.DotNetBar.LabelX();
-            this.lblMobile = new DevComponents.DotNetBar.LabelX();
-            this.lblTelSabet = new DevComponents.DotNetBar.LabelX();
-            this.lblJensiat = new DevComponents.DotNetBar.LabelX();
-            this.lblSahebKhane = new DevComponents.DotNetBar.LabelX();
-            this.lblTahsilat = new DevComponents.DotNetBar.LabelX();
-            this.lblMetraj = new DevComponents.DotNetBar.LabelX();
-            this.lblSarparast = new DevComponents.DotNetBar.LabelX();
-            this.lblTaahol = new DevComponents.DotNetBar.LabelX();
-            this.lblBime = new DevComponents.DotNetBar.LabelX();
+            this.tabControl1 = new DevComponents.DotNetBar.TabControl();
+            this.tabZamin = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
+            this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnAdd = new DevComponents.DotNetBar.ButtonX();
+            this.tabItem2 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
+            this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
+            this.groupPanel5 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.groupPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabControlPanel1.SuspendLayout();
+            this.groupPanel3.SuspendLayout();
+            this.tabControlPanel2.SuspendLayout();
+            this.panelEx1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupPanel1
             // 
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel1.Controls.Add(this.groupPanel3);
+            this.groupPanel1.Controls.Add(this.tabControl1);
             this.groupPanel1.Controls.Add(this.groupPanel2);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -175,6 +194,230 @@
             this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel2.TabIndex = 1;
             // 
+            // lblBime
+            // 
+            this.lblBime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblBime.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblBime.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblBime.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblBime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblBime.Location = new System.Drawing.Point(57, 64);
+            this.lblBime.Name = "lblBime";
+            this.lblBime.Size = new System.Drawing.Size(121, 23);
+            this.lblBime.TabIndex = 57;
+            this.lblBime.Text = "نام پدر:";
+            // 
+            // lblMetraj
+            // 
+            this.lblMetraj.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMetraj.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblMetraj.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblMetraj.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblMetraj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblMetraj.Location = new System.Drawing.Point(315, 66);
+            this.lblMetraj.Name = "lblMetraj";
+            this.lblMetraj.Size = new System.Drawing.Size(93, 23);
+            this.lblMetraj.TabIndex = 57;
+            this.lblMetraj.Text = "نام پدر:";
+            // 
+            // lblJensiat
+            // 
+            this.lblJensiat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblJensiat.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblJensiat.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblJensiat.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblJensiat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblJensiat.Location = new System.Drawing.Point(550, 66);
+            this.lblJensiat.Name = "lblJensiat";
+            this.lblJensiat.Size = new System.Drawing.Size(120, 23);
+            this.lblJensiat.TabIndex = 57;
+            this.lblJensiat.Text = "نام پدر:";
+            // 
+            // lblSarparast
+            // 
+            this.lblSarparast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSarparast.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblSarparast.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblSarparast.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblSarparast.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSarparast.Location = new System.Drawing.Point(35, 6);
+            this.lblSarparast.Name = "lblSarparast";
+            this.lblSarparast.Size = new System.Drawing.Size(143, 23);
+            this.lblSarparast.TabIndex = 47;
+            this.lblSarparast.Text = "نام:";
+            // 
+            // lblTaahol
+            // 
+            this.lblTaahol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTaahol.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblTaahol.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblTaahol.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblTaahol.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTaahol.Location = new System.Drawing.Point(57, 35);
+            this.lblTaahol.Name = "lblTaahol";
+            this.lblTaahol.Size = new System.Drawing.Size(121, 23);
+            this.lblTaahol.TabIndex = 48;
+            this.lblTaahol.Text = "نام پدر:";
+            // 
+            // lblCodePosti
+            // 
+            this.lblCodePosti.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCodePosti.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblCodePosti.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblCodePosti.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.lblCodePosti.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCodePosti.Location = new System.Drawing.Point(807, 64);
+            this.lblCodePosti.Name = "lblCodePosti";
+            this.lblCodePosti.Size = new System.Drawing.Size(120, 23);
+            this.lblCodePosti.TabIndex = 57;
+            this.lblCodePosti.Text = "نام پدر:";
+            // 
+            // lblSahebKhane
+            // 
+            this.lblSahebKhane.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblSahebKhane.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblSahebKhane.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblSahebKhane.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblSahebKhane.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblSahebKhane.Location = new System.Drawing.Point(315, 37);
+            this.lblSahebKhane.Name = "lblSahebKhane";
+            this.lblSahebKhane.Size = new System.Drawing.Size(93, 23);
+            this.lblSahebKhane.TabIndex = 48;
+            this.lblSahebKhane.Text = "نام پدر:";
+            // 
+            // lblCodeMelli
+            // 
+            this.lblCodeMelli.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblCodeMelli.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblCodeMelli.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblCodeMelli.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.lblCodeMelli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblCodeMelli.Location = new System.Drawing.Point(1080, 62);
+            this.lblCodeMelli.Name = "lblCodeMelli";
+            this.lblCodeMelli.Size = new System.Drawing.Size(142, 23);
+            this.lblCodeMelli.TabIndex = 57;
+            this.lblCodeMelli.Text = "نام پدر:";
+            // 
+            // lblTahsilat
+            // 
+            this.lblTahsilat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTahsilat.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblTahsilat.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblTahsilat.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblTahsilat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTahsilat.Location = new System.Drawing.Point(315, 8);
+            this.lblTahsilat.Name = "lblTahsilat";
+            this.lblTahsilat.Size = new System.Drawing.Size(93, 23);
+            this.lblTahsilat.TabIndex = 47;
+            this.lblTahsilat.Text = "نام:";
+            // 
+            // lblTelSabet
+            // 
+            this.lblTelSabet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTelSabet.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblTelSabet.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblTelSabet.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblTelSabet.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTelSabet.Location = new System.Drawing.Point(550, 8);
+            this.lblTelSabet.Name = "lblTelSabet";
+            this.lblTelSabet.Size = new System.Drawing.Size(120, 23);
+            this.lblTelSabet.TabIndex = 47;
+            this.lblTelSabet.Text = "نام:";
+            // 
+            // lblMobile
+            // 
+            this.lblMobile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblMobile.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblMobile.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblMobile.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblMobile.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblMobile.Location = new System.Drawing.Point(550, 37);
+            this.lblMobile.Name = "lblMobile";
+            this.lblMobile.Size = new System.Drawing.Size(120, 23);
+            this.lblMobile.TabIndex = 48;
+            this.lblMobile.Text = "نام پدر:";
+            // 
+            // lblName
+            // 
+            this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblName.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblName.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.lblName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblName.Location = new System.Drawing.Point(1080, 1);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(142, 23);
+            this.lblName.TabIndex = 47;
+            this.lblName.Text = "نام:";
+            // 
+            // lblTarikhTavalod
+            // 
+            this.lblTarikhTavalod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTarikhTavalod.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblTarikhTavalod.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblTarikhTavalod.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.lblTarikhTavalod.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblTarikhTavalod.Location = new System.Drawing.Point(806, 6);
+            this.lblTarikhTavalod.Name = "lblTarikhTavalod";
+            this.lblTarikhTavalod.Size = new System.Drawing.Size(120, 23);
+            this.lblTarikhTavalod.TabIndex = 47;
+            this.lblTarikhTavalod.Text = "نام:";
+            // 
+            // lblShomareShenasname
+            // 
+            this.lblShomareShenasname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblShomareShenasname.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblShomareShenasname.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblShomareShenasname.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.lblShomareShenasname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblShomareShenasname.Location = new System.Drawing.Point(807, 35);
+            this.lblShomareShenasname.Name = "lblShomareShenasname";
+            this.lblShomareShenasname.Size = new System.Drawing.Size(120, 23);
+            this.lblShomareShenasname.TabIndex = 48;
+            this.lblShomareShenasname.Text = "نام پدر:";
+            // 
             // lblx
             // 
             this.lblx.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -182,7 +425,7 @@
             // 
             // 
             // 
-            this.lblMetraj.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblx.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.lblx.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblx.Location = new System.Drawing.Point(414, 67);
             this.lblx.Name = "lblx";
@@ -206,6 +449,22 @@
             this.labelX13.TabIndex = 43;
             this.labelX13.Text = "صاحب خانه:";
             this.labelX13.TextAlignment = System.Drawing.StringAlignment.Far;
+            // 
+            // lblNamePdar
+            // 
+            this.lblNamePdar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblNamePdar.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.lblNamePdar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.lblNamePdar.Font = new System.Drawing.Font("Tahoma", 9F);
+            this.lblNamePdar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblNamePdar.Location = new System.Drawing.Point(1080, 29);
+            this.lblNamePdar.Name = "lblNamePdar";
+            this.lblNamePdar.Size = new System.Drawing.Size(142, 23);
+            this.lblNamePdar.TabIndex = 48;
+            this.lblNamePdar.Text = "نام پدر:";
             // 
             // labelX12
             // 
@@ -415,245 +674,205 @@
             this.labelX8.Text = "شماره همراه:";
             this.labelX8.TextAlignment = System.Drawing.StringAlignment.Far;
             // 
-            // lblName
-            // 
-            this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblName.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblName.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblName.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.lblName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblName.Location = new System.Drawing.Point(1080, 1);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(142, 23);
-            this.lblName.TabIndex = 47;
-            this.lblName.Text = "نام:";
-            // 
-            // lblNamePdar
-            // 
-            this.lblNamePdar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblNamePdar.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblNamePdar.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblNamePdar.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.lblNamePdar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblNamePdar.Location = new System.Drawing.Point(1080, 29);
-            this.lblNamePdar.Name = "lblNamePdar";
-            this.lblNamePdar.Size = new System.Drawing.Size(142, 23);
-            this.lblNamePdar.TabIndex = 48;
-            this.lblNamePdar.Text = "نام پدر:";
-            // 
-            // lblCodeMelli
-            // 
-            this.lblCodeMelli.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCodeMelli.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblCodeMelli.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblCodeMelli.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.lblCodeMelli.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCodeMelli.Location = new System.Drawing.Point(1080, 62);
-            this.lblCodeMelli.Name = "lblCodeMelli";
-            this.lblCodeMelli.Size = new System.Drawing.Size(142, 23);
-            this.lblCodeMelli.TabIndex = 57;
-            this.lblCodeMelli.Text = "نام پدر:";
-            // 
-            // lblShomareShenasname
-            // 
-            this.lblShomareShenasname.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblShomareShenasname.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblShomareShenasname.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblShomareShenasname.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.lblShomareShenasname.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblShomareShenasname.Location = new System.Drawing.Point(807, 35);
-            this.lblShomareShenasname.Name = "lblShomareShenasname";
-            this.lblShomareShenasname.Size = new System.Drawing.Size(120, 23);
-            this.lblShomareShenasname.TabIndex = 48;
-            this.lblShomareShenasname.Text = "نام پدر:";
-            // 
-            // lblTarikhTavalod
-            // 
-            this.lblTarikhTavalod.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTarikhTavalod.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblTarikhTavalod.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblTarikhTavalod.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.lblTarikhTavalod.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTarikhTavalod.Location = new System.Drawing.Point(806, 6);
-            this.lblTarikhTavalod.Name = "lblTarikhTavalod";
-            this.lblTarikhTavalod.Size = new System.Drawing.Size(120, 23);
-            this.lblTarikhTavalod.TabIndex = 47;
-            this.lblTarikhTavalod.Text = "نام:";
-            // 
-            // lblCodePosti
-            // 
-            this.lblCodePosti.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblCodePosti.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblCodePosti.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblCodePosti.Font = new System.Drawing.Font("Tahoma", 9F);
-            this.lblCodePosti.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblCodePosti.Location = new System.Drawing.Point(807, 64);
-            this.lblCodePosti.Name = "lblCodePosti";
-            this.lblCodePosti.Size = new System.Drawing.Size(120, 23);
-            this.lblCodePosti.TabIndex = 57;
-            this.lblCodePosti.Text = "نام پدر:";
-            // 
-            // lblMobile
-            // 
-            this.lblMobile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblMobile.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblMobile.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblMobile.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblMobile.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblMobile.Location = new System.Drawing.Point(550, 37);
-            this.lblMobile.Name = "lblMobile";
-            this.lblMobile.Size = new System.Drawing.Size(120, 23);
-            this.lblMobile.TabIndex = 48;
-            this.lblMobile.Text = "نام پدر:";
-            // 
-            // lblTelSabet
-            // 
-            this.lblTelSabet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTelSabet.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblTelSabet.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblTelSabet.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblTelSabet.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTelSabet.Location = new System.Drawing.Point(550, 8);
-            this.lblTelSabet.Name = "lblTelSabet";
-            this.lblTelSabet.Size = new System.Drawing.Size(120, 23);
-            this.lblTelSabet.TabIndex = 47;
-            this.lblTelSabet.Text = "نام:";
-            // 
-            // lblJensiat
-            // 
-            this.lblJensiat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblJensiat.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblJensiat.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblJensiat.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblJensiat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblJensiat.Location = new System.Drawing.Point(550, 66);
-            this.lblJensiat.Name = "lblJensiat";
-            this.lblJensiat.Size = new System.Drawing.Size(120, 23);
-            this.lblJensiat.TabIndex = 57;
-            this.lblJensiat.Text = "نام پدر:";
-            // 
-            // lblSahebKhane
-            // 
-            this.lblSahebKhane.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSahebKhane.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblSahebKhane.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblSahebKhane.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblSahebKhane.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSahebKhane.Location = new System.Drawing.Point(315, 37);
-            this.lblSahebKhane.Name = "lblSahebKhane";
-            this.lblSahebKhane.Size = new System.Drawing.Size(93, 23);
-            this.lblSahebKhane.TabIndex = 48;
-            this.lblSahebKhane.Text = "نام پدر:";
-            // 
-            // lblTahsilat
-            // 
-            this.lblTahsilat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTahsilat.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblTahsilat.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblTahsilat.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblTahsilat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTahsilat.Location = new System.Drawing.Point(315, 8);
-            this.lblTahsilat.Name = "lblTahsilat";
-            this.lblTahsilat.Size = new System.Drawing.Size(93, 23);
-            this.lblTahsilat.TabIndex = 47;
-            this.lblTahsilat.Text = "نام:";
-            // 
-            // lblMetraj
-            // 
-            this.lblMetraj.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblMetraj.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblMetraj.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblMetraj.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblMetraj.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblMetraj.Location = new System.Drawing.Point(315, 66);
-            this.lblMetraj.Name = "lblMetraj";
-            this.lblMetraj.Size = new System.Drawing.Size(93, 23);
-            this.lblMetraj.TabIndex = 57;
-            this.lblMetraj.Text = "نام پدر:";
-            // 
-            // lblSarparast
-            // 
-            this.lblSarparast.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSarparast.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblSarparast.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblSarparast.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblSarparast.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblSarparast.Location = new System.Drawing.Point(35, 6);
-            this.lblSarparast.Name = "lblSarparast";
-            this.lblSarparast.Size = new System.Drawing.Size(143, 23);
-            this.lblSarparast.TabIndex = 47;
-            this.lblSarparast.Text = "نام:";
-            // 
-            // lblTaahol
-            // 
-            this.lblTaahol.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTaahol.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblTaahol.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblTaahol.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblTaahol.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblTaahol.Location = new System.Drawing.Point(57, 35);
-            this.lblTaahol.Name = "lblTaahol";
-            this.lblTaahol.Size = new System.Drawing.Size(121, 23);
-            this.lblTaahol.TabIndex = 48;
-            this.lblTaahol.Text = "نام پدر:";
-            // 
-            // lblBime
-            // 
-            this.lblBime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblBime.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.lblBime.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.lblBime.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblBime.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblBime.Location = new System.Drawing.Point(57, 64);
-            this.lblBime.Name = "lblBime";
-            this.lblBime.Size = new System.Drawing.Size(121, 23);
-            this.lblBime.TabIndex = 57;
-            this.lblBime.Text = "نام پدر:";
+            // tabControl1
+            // 
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.CanReorderTabs = true;
+            this.tabControl1.Controls.Add(this.tabControlPanel1);
+            this.tabControl1.Controls.Add(this.tabControlPanel2);
+            this.tabControl1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold);
+            this.tabControl1.Location = new System.Drawing.Point(0, 111);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedTabFont = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.tabControl1.SelectedTabIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1301, 556);
+            this.tabControl1.TabIndex = 2;
+            this.tabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
+            this.tabControl1.Tabs.Add(this.tabZamin);
+            this.tabControl1.Tabs.Add(this.tabItem2);
+            // 
+            // tabZamin
+            // 
+            this.tabZamin.AttachedControl = this.tabControlPanel1;
+            this.tabZamin.Name = "tabZamin";
+            this.tabZamin.Text = "زمین";
+            // 
+            // tabControlPanel1
+            // 
+            this.tabControlPanel1.Controls.Add(this.panelEx1);
+            this.tabControlPanel1.DisabledBackColor = System.Drawing.Color.Empty;
+            this.tabControlPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlPanel1.Location = new System.Drawing.Point(0, 31);
+            this.tabControlPanel1.Name = "tabControlPanel1";
+            this.tabControlPanel1.Padding = new System.Windows.Forms.Padding(1);
+            this.tabControlPanel1.Size = new System.Drawing.Size(1301, 525);
+            this.tabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
+            this.tabControlPanel1.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.tabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabControlPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabControlPanel1.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel1.Style.GradientAngle = 90;
+            this.tabControlPanel1.TabIndex = 1;
+            this.tabControlPanel1.TabItem = this.tabZamin;
+            // 
+            // groupPanel3
+            // 
+            this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel3.Controls.Add(this.btnAdd);
+            this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.groupPanel3.Font = new System.Drawing.Font("Tahoma", 7.8F);
+            this.groupPanel3.Location = new System.Drawing.Point(0, 673);
+            this.groupPanel3.Name = "groupPanel3";
+            this.groupPanel3.Size = new System.Drawing.Size(1304, 46);
+            // 
+            // 
+            // 
+            this.groupPanel3.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel3.Style.BackColorGradientAngle = 90;
+            this.groupPanel3.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderBottomWidth = 1;
+            this.groupPanel3.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderLeftWidth = 1;
+            this.groupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderRightWidth = 1;
+            this.groupPanel3.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderTopWidth = 1;
+            this.groupPanel3.Style.CornerDiameter = 4;
+            this.groupPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel3.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel3.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel3.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel3.TabIndex = 15;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAdd.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnAdd.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.btnAdd.Image = global::Dehyari.Properties.Resources.iconfinder_simpline_53_2305609;
+            this.btnAdd.Location = new System.Drawing.Point(1197, 6);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(75, 31);
+            this.btnAdd.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnAdd.TabIndex = 0;
+            this.btnAdd.Text = "ثبت";
+            // 
+            // tabItem2
+            // 
+            this.tabItem2.AttachedControl = this.tabControlPanel2;
+            this.tabItem2.Name = "tabItem2";
+            this.tabItem2.Text = "tabItem2";
+            // 
+            // tabControlPanel2
+            // 
+            this.tabControlPanel2.Controls.Add(this.panelEx2);
+            this.tabControlPanel2.DisabledBackColor = System.Drawing.Color.Empty;
+            this.tabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlPanel2.Location = new System.Drawing.Point(0, 31);
+            this.tabControlPanel2.Name = "tabControlPanel2";
+            this.tabControlPanel2.Padding = new System.Windows.Forms.Padding(1);
+            this.tabControlPanel2.Size = new System.Drawing.Size(1301, 525);
+            this.tabControlPanel2.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
+            this.tabControlPanel2.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.tabControlPanel2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabControlPanel2.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabControlPanel2.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel2.Style.GradientAngle = 90;
+            this.tabControlPanel2.TabIndex = 5;
+            this.tabControlPanel2.TabItem = this.tabItem2;
+            // 
+            // panelEx1
+            // 
+            this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx1.Controls.Add(this.groupPanel5);
+            this.panelEx1.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEx1.Location = new System.Drawing.Point(1, 1);
+            this.panelEx1.Name = "panelEx1";
+            this.panelEx1.Size = new System.Drawing.Size(1299, 523);
+            this.panelEx1.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx1.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx1.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx1.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx1.Style.GradientAngle = 90;
+            this.panelEx1.TabIndex = 0;
+            // 
+            // panelEx2
+            // 
+            this.panelEx2.CanvasColor = System.Drawing.SystemColors.Control;
+            this.panelEx2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx2.DisabledBackColor = System.Drawing.Color.Empty;
+            this.panelEx2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelEx2.Location = new System.Drawing.Point(1, 1);
+            this.panelEx2.Name = "panelEx2";
+            this.panelEx2.Size = new System.Drawing.Size(1299, 523);
+            this.panelEx2.Style.Alignment = System.Drawing.StringAlignment.Center;
+            this.panelEx2.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.panelEx2.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.panelEx2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.panelEx2.Style.BorderColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.panelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.panelEx2.Style.GradientAngle = 90;
+            this.panelEx2.TabIndex = 4;
+            // 
+            // groupPanel5
+            // 
+            this.groupPanel5.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel5.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel5.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupPanel5.Location = new System.Drawing.Point(2, 0);
+            this.groupPanel5.Name = "groupPanel5";
+            this.groupPanel5.Size = new System.Drawing.Size(1297, 523);
+            // 
+            // 
+            // 
+            this.groupPanel5.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel5.Style.BackColorGradientAngle = 90;
+            this.groupPanel5.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel5.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel5.Style.BorderBottomWidth = 1;
+            this.groupPanel5.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel5.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel5.Style.BorderLeftWidth = 1;
+            this.groupPanel5.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel5.Style.BorderRightWidth = 1;
+            this.groupPanel5.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel5.Style.BorderTopWidth = 1;
+            this.groupPanel5.Style.CornerDiameter = 4;
+            this.groupPanel5.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel5.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel5.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel5.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel5.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel5.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel5.TabIndex = 1;
             // 
             // frmPersonDetails
             // 
@@ -668,6 +887,12 @@
             this.Load += new System.EventHandler(this.frmPersonDetails_Load);
             this.groupPanel1.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
+            this.tabControl1.ResumeLayout(false);
+            this.tabControlPanel1.ResumeLayout(false);
+            this.groupPanel3.ResumeLayout(false);
+            this.tabControlPanel2.ResumeLayout(false);
+            this.panelEx1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -706,5 +931,15 @@
         private DevComponents.DotNetBar.LabelX lblTarikhTavalod;
         private DevComponents.DotNetBar.LabelX lblShomareShenasname;
         private DevComponents.DotNetBar.LabelX lblNamePdar;
+        private DevComponents.DotNetBar.TabControl tabControl1;
+        private DevComponents.DotNetBar.TabControlPanel tabControlPanel1;
+        private DevComponents.DotNetBar.TabItem tabZamin;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
+        private DevComponents.DotNetBar.ButtonX btnAdd;
+        private DevComponents.DotNetBar.TabControlPanel tabControlPanel2;
+        private DevComponents.DotNetBar.TabItem tabItem2;
+        private DevComponents.DotNetBar.PanelEx panelEx1;
+        private DevComponents.DotNetBar.PanelEx panelEx2;
+        private DevComponents.DotNetBar.Controls.GroupPanel groupPanel5;
     }
 }

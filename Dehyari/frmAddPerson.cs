@@ -11,7 +11,7 @@ using System.ComponentModel;
 
 namespace Dehyari
 {
-    public partial class AddPerson : Form
+    public partial class frmAddPerson : Form
     {
         public int Refer { get; set; }//1=Add, 2= Edit
         public int PersonID { get; set; }
@@ -241,7 +241,7 @@ namespace Dehyari
 
             }
         }
-        public AddPerson()//FormLoad
+        public frmAddPerson()//FormLoad
         {
             InitializeComponent();
             AddComboboxSex();

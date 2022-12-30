@@ -33,6 +33,7 @@
             this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
+            this.btnJaygahZamin = new DevComponents.DotNetBar.ButtonX();
             this.panelEx1.SuspendLayout();
             this.panelEx2.SuspendLayout();
             this.SuspendLayout();
@@ -41,6 +42,7 @@
             // 
             this.panelEx1.CanvasColor = System.Drawing.SystemColors.Control;
             this.panelEx1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.panelEx1.Controls.Add(this.btnJaygahZamin);
             this.panelEx1.Controls.Add(this.btnAddPerson);
             this.panelEx1.Controls.Add(this.panelEx3);
             this.panelEx1.Controls.Add(this.panelEx2);
@@ -58,7 +60,7 @@
             this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 0;
-            this.panelEx1.Click += new System.EventHandler(this.panelEx1_Click);
+
             // 
             // btnAddPerson
             // 
@@ -90,7 +92,6 @@
             this.panelEx3.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.panelEx3.Style.GradientAngle = 90;
             this.panelEx3.TabIndex = 8;
-            this.panelEx3.Click += new System.EventHandler(this.panelEx3_Click);
             // 
             // panelEx2
             // 
@@ -111,7 +112,6 @@
             this.panelEx2.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.panelEx2.Style.GradientAngle = 90;
             this.panelEx2.TabIndex = 4;
-            this.panelEx2.Click += new System.EventHandler(this.panelEx2_Click);
             // 
             // expandablePanel1
             // 
@@ -143,6 +143,18 @@
             this.expandablePanel1.TitleText = "منوع اصلی";
             this.expandablePanel1.Click += new System.EventHandler(this.expandablePanel1_Click);
             // 
+            // btnJaygahZamin
+            // 
+            this.btnJaygahZamin.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnJaygahZamin.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnJaygahZamin.Location = new System.Drawing.Point(1000, 221);
+            this.btnJaygahZamin.Name = "btnJaygahZamin";
+            this.btnJaygahZamin.Size = new System.Drawing.Size(118, 25);
+            this.btnJaygahZamin.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnJaygahZamin.TabIndex = 4;
+            this.btnJaygahZamin.Text = "جایگاه زمین";
+            this.btnJaygahZamin.Click += new System.EventHandler(this.btnJaygahZamin_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 21F);
@@ -168,6 +180,7 @@
         private DevComponents.DotNetBar.PanelEx panelEx3;
         private DevComponents.DotNetBar.ExpandablePanel expandablePanel1;
         private DevComponents.DotNetBar.ButtonX btnAddPerson;
+        private DevComponents.DotNetBar.ButtonX btnJaygahZamin;
     }
 }
 

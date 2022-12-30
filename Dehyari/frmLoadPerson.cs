@@ -14,14 +14,14 @@ using System.Xml.Linq;
 
 namespace Dehyari
 {
-    public partial class LoadPerson : Form
+    public partial class frmLoadPerson : Form
     {
         int personID = -1;
         DehyariContext d = new DehyariContext();
-        public LoadPerson()
+        public frmLoadPerson()
         {
             InitializeComponent();
-            DispalyPerson();
+            DisplayPerson();
         }
         void DataGridHeaders()
         {
@@ -48,7 +48,7 @@ namespace Dehyari
             dgvLoadPeople.Columns["IsSarparastKhanevarID"].Visible = false;
 
         }
-        void DispalyPerson()
+        void DisplayPerson()
         {
             DehyariContext dbcontext = new DehyariContext();
             var query = from r in dbcontext.People
@@ -130,12 +130,12 @@ namespace Dehyari
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            AddPerson Add = new AddPerson();
+            frmAddPerson Add = new frmAddPerson();
             Add.Refer = 1;
             Add.Text = "افزودن شخص";
             if (Add.ShowDialog() == DialogResult.OK)
             {
-                DispalyPerson();
+                DisplayPerson();
             }
         }
         private void dgvLoadPeople_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -145,7 +145,7 @@ namespace Dehyari
         }
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            AddPerson Add = new AddPerson();
+            frmAddPerson Add = new frmAddPerson();
             Add.Refer = 2;
             Add.PersonID = personID;
             Add.Text = "ویرایش شخص";
@@ -153,7 +153,7 @@ namespace Dehyari
             {
                 if (Add.ShowDialog() == DialogResult.OK)
                 {
-                    DispalyPerson();
+                    DisplayPerson();
                     personID = -1;
                 }
             }
@@ -174,7 +174,7 @@ namespace Dehyari
                         p = d.People.Where(c => c.PersonID == personID).First();
                         d.People.Remove(p);
                         d.SaveChanges();
-                        DispalyPerson();
+                        DisplayPerson();
                         personID = -1;
                     }
                 }
@@ -198,7 +198,7 @@ namespace Dehyari
             {
                 if (frm.ShowDialog() == DialogResult.OK)
                 {
-                    DispalyPerson();
+                    DisplayPerson();
                     personID = -1;
                 }
             }
