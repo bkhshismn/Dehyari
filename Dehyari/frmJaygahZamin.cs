@@ -135,5 +135,22 @@ namespace Dehyari
             string NRFormat = "###,###";
             dgvJaygahZamin.Columns["NerkhAb"].DefaultCellStyle.Format = NRFormat;
         }
+
+        private void txtAbbaha_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtAbbaha.Text != string.Empty)
+                {
+                    txtAbbaha.Text = string.Format("{0:N0}", double.Parse(txtAbbaha.Text.Replace(",", "")));
+                    txtAbbaha.Select(txtAbbaha.TextLength, 0);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("خطایی در درج اطلاعات رخ داده است.");
+            }
+        }
+
     }
 }

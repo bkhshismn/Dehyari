@@ -229,6 +229,7 @@
             this.txtAbbaha.PreventEnterBeep = true;
             this.txtAbbaha.Size = new System.Drawing.Size(153, 23);
             this.txtAbbaha.TabIndex = 2;
+            this.txtAbbaha.TextChanged += new System.EventHandler(this.txtAbbaha_TextChanged);
             // 
             // txtJaygah
             // 

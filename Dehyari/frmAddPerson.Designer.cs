@@ -745,13 +745,13 @@
             this.txtName.Size = new System.Drawing.Size(191, 23);
             this.txtName.TabIndex = 0;
             // 
-            // AddPerson
+            // frmAddPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 352);
             this.Controls.Add(this.groupPanel1);
-            this.Name = "AddPerson";
+            this.Name = "frmAddPerson";
             this.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "افزودن اشخاص";

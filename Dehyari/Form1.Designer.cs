@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panelEx1 = new DevComponents.DotNetBar.PanelEx();
+            this.btnJaygahZamin = new DevComponents.DotNetBar.ButtonX();
             this.btnAddPerson = new DevComponents.DotNetBar.ButtonX();
             this.panelEx3 = new DevComponents.DotNetBar.PanelEx();
             this.panelEx2 = new DevComponents.DotNetBar.PanelEx();
             this.expandablePanel1 = new DevComponents.DotNetBar.ExpandablePanel();
-            this.btnJaygahZamin = new DevComponents.DotNetBar.ButtonX();
             this.panelEx1.SuspendLayout();
             this.panelEx2.SuspendLayout();
             this.SuspendLayout();
@@ -60,12 +60,25 @@
             this.panelEx1.Style.ForeColor.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
             this.panelEx1.Style.GradientAngle = 90;
             this.panelEx1.TabIndex = 0;
-
+            // 
+            // btnJaygahZamin
+            // 
+            this.btnJaygahZamin.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnJaygahZamin.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnJaygahZamin.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
+            this.btnJaygahZamin.Location = new System.Drawing.Point(1000, 220);
+            this.btnJaygahZamin.Name = "btnJaygahZamin";
+            this.btnJaygahZamin.Size = new System.Drawing.Size(118, 25);
+            this.btnJaygahZamin.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnJaygahZamin.TabIndex = 4;
+            this.btnJaygahZamin.Text = "جایگاه زمین";
+            this.btnJaygahZamin.Click += new System.EventHandler(this.btnJaygahZamin_Click);
             // 
             // btnAddPerson
             // 
             this.btnAddPerson.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
             this.btnAddPerson.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnAddPerson.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.btnAddPerson.Location = new System.Drawing.Point(1000, 190);
             this.btnAddPerson.Name = "btnAddPerson";
             this.btnAddPerson.Size = new System.Drawing.Size(118, 25);
@@ -80,10 +93,10 @@
             this.panelEx3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.panelEx3.DisabledBackColor = System.Drawing.Color.Empty;
             this.panelEx3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelEx3.Location = new System.Drawing.Point(0, 662);
+            this.panelEx3.Location = new System.Drawing.Point(0, 663);
             this.panelEx3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelEx3.Name = "panelEx3";
-            this.panelEx3.Size = new System.Drawing.Size(1224, 53);
+            this.panelEx3.Size = new System.Drawing.Size(1224, 52);
             this.panelEx3.Style.Alignment = System.Drawing.StringAlignment.Center;
             this.panelEx3.Style.BackColor1.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
             this.panelEx3.Style.BackColor2.ColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
@@ -119,6 +132,7 @@
             this.expandablePanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.expandablePanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.expandablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.expandablePanel1.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold);
             this.expandablePanel1.HideControlsWhenCollapsed = true;
             this.expandablePanel1.Location = new System.Drawing.Point(0, 0);
             this.expandablePanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -142,18 +156,6 @@
             this.expandablePanel1.TitleStyle.GradientAngle = 90;
             this.expandablePanel1.TitleText = "منوع اصلی";
             this.expandablePanel1.Click += new System.EventHandler(this.expandablePanel1_Click);
-            // 
-            // btnJaygahZamin
-            // 
-            this.btnJaygahZamin.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnJaygahZamin.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnJaygahZamin.Location = new System.Drawing.Point(1000, 221);
-            this.btnJaygahZamin.Name = "btnJaygahZamin";
-            this.btnJaygahZamin.Size = new System.Drawing.Size(118, 25);
-            this.btnJaygahZamin.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnJaygahZamin.TabIndex = 4;
-            this.btnJaygahZamin.Text = "جایگاه زمین";
-            this.btnJaygahZamin.Click += new System.EventHandler(this.btnJaygahZamin_Click);
             // 
             // Form1
             // 

@@ -72,13 +72,13 @@
     <Compile Include="frmAddPerson.Designer.cs">
       <DependentUpon>frmAddPerson.cs</DependentUpon>
     </Compile>
-    <Compile Include="BedNo.cs" />
-    <Compile Include="Bime.cs" />
+    <Compile Include="DomainClass\BedNo.cs" />
+    <Compile Include="DomainClass\Bime.cs" />
     <Compile Include="C__MigrationHistory.cs" />
-    <Compile Include="Daryaft.cs" />
+    <Compile Include="DomainClass\Daryaft.cs" />
     <Compile Include="DehyariContext.cs" />
-    <Compile Include="DehyariHesab.cs" />
-    <Compile Include="Delivery.cs" />
+    <Compile Include="DomainClass\DehyariHesab.cs" />
+    <Compile Include="DomainClass\Delivery.cs" />
     <Compile Include="frmJaygahZamin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +91,11 @@
     <Compile Include="frmPersonDetails.Designer.cs">
       <DependentUpon>frmPersonDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hazine.cs" />
-    <Compile Include="IsKhanedar.cs" />
-    <Compile Include="IsMarried.cs" />
-    <Compile Include="IsSarparastKhanevar.cs" />
-    <Compile Include="JaygahZamin.cs" />
+    <Compile Include="DomainClass\Hazine.cs" />
+    <Compile Include="DomainClass\IsKhanedar.cs" />
+    <Compile Include="DomainClass\IsMarried.cs" />
+    <Compile Include="DomainClass\IsSarparastKhanevar.cs" />
+    <Compile Include="DomainClass\JaygahZamin.cs" />
     <Compile Include="frmLoadPerson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -129,21 +129,21 @@
       <DependentUpon>202212131854251_FluenAPITERST1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="NameSadere.cs" />
-    <Compile Include="NameVarede.cs" />
-    <Compile Include="NoDaryaft.cs" />
-    <Compile Include="NoHazine.cs" />
-    <Compile Include="NoZamin.cs" />
-    <Compile Include="OnvanName.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="PersonHesab.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="DomainClass\NameSadere.cs" />
+    <Compile Include="DomainClass\NameVarede.cs" />
+    <Compile Include="DomainClass\NoDaryaft.cs" />
+    <Compile Include="DomainClass\NoHazine.cs" />
+    <Compile Include="DomainClass\NoZamin.cs" />
+    <Compile Include="DomainClass\OnvanName.cs" />
+    <Compile Include="DomainClass\Person.cs" />
+    <Compile Include="DomainClass\PersonHesab.cs" />
+    <Compile Include="DomainClass\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sex.cs" />
-    <Compile Include="SM.cs" />
-    <Compile Include="sysdiagram.cs" />
-    <Compile Include="Tahsilatt.cs" />
-    <Compile Include="Zamin.cs" />
+    <Compile Include="DomainClass\Sex.cs" />
+    <Compile Include="DomainClass\SM.cs" />
+    <Compile Include="DomainClass\sysdiagram.cs" />
+    <Compile Include="DomainClass\Tahsilatt.cs" />
+    <Compile Include="DomainClass\Zamin.cs" />
     <EmbeddedResource Include="frmAddPerson.resx">
       <DependentUpon>frmAddPerson.cs</DependentUpon>
     </EmbeddedResource>
