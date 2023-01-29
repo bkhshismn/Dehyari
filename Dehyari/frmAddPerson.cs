@@ -199,7 +199,7 @@ namespace Dehyari
                 p.NamePedar = txtNamePedar.Text;
                 p.Mobile = txtMobile.Text;
                 p.TelSabet = txtTellSabet.Text;
-                p.TarikhTavalod=cmbBirthDate.Text;
+               // p.TarikhTavalod=cmbBirthDate.Text;
                 p.TarikhTavalod = cmbBirthDate.Value.Year.ToString() + "/" + cmbBirthDate.Value.Month.ToString("0#") + "/" + cmbBirthDate.Value.Day.ToString();
                 p.MetrajKhane = Convert.ToDouble(txtMetraj.Text.Replace(",", ""));
                 p.ShomareShenasname = txtShoareShenasname.Text;

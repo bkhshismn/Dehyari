@@ -10,7 +10,7 @@ namespace Dehyari
     public partial class PersonHesab
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int HesabID { get; set; }
 
         public int SaleMali { get; set; }
@@ -29,5 +29,7 @@ namespace Dehyari
         public virtual BedNo BedNo { get; set; }
 
         public virtual Person Person { get; set; }
+        [StringLength(100)]
+        public string Sayer { get; set; }
     }
 }

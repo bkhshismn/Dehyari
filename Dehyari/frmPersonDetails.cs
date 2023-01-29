@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -129,6 +130,10 @@ namespace Dehyari
                 using (DehyariContext d = new DehyariContext())
                 {
                     Zamin z = new Zamin();
+                    if (txtMasahat.Text == string.Empty)
+                    {
+                        MessageBox.Show("خطایی در درج اطلاعات رخ داده است.");
+                    }
                     z.Masahat = Convert.ToInt64(txtMasahat.Text.Replace(",", ""));
                     z.NoZaminID = Convert.ToInt32(cmdNoZamin.SelectedValue);
                     z.JaygahZaminID = Convert.ToInt32(cmdJaygahZamin.SelectedValue);
@@ -220,15 +225,84 @@ namespace Dehyari
                 cmdJaygahZamin.DisplayMember = "JaygahZamin1";
             }
         }
+        void AddComboboxNoBed()
+        {
+            using (DehyariContext d = new DehyariContext())
+            {
+                List<BedNo> bedno = d.BedNoes.ToList();
+                cmbBedNo.DataSource = bedno;
+                cmbBedNo.ValueMember = "BedNoID";
+                cmbBedNo.DisplayMember = "BedNo1";
+            }
+        }
+        void DissplayBed()
+        {
+            try
+            {
+                using (DehyariContext dbContext = new DehyariContext())
+                {
+                    var query = from BedHesab in dbContext.PersonHesabs
+                               
+                                select new
+                                {
+                                    BedHesab.PersonID,
+                                    BedHesab.Bed,
+                                    BedHesab.Date,
+                                    BedHesab.Sayer
+                                };
+                    query.Where(c => c.PersonID == PersonID);
+                    dgvBed.DataSource = query.ToList();
+
+                }
+            }
+            catch (Exception)
+            {
+
+
+            }
+
+        }
+        void AddBed()
+        {
+            using (DehyariContext dbContext = new DehyariContext())
+            {
+                PersonHesab BedHesab = new PersonHesab();
+                BedHesab.PersonID = PersonID;
+                BedHesab.Bed= Convert.ToInt64(txtBed.Text.Replace(",",""));
+                BedHesab.Date= cmbBedDate.Value.Year.ToString() + "/" + cmbBedDate.Value.Month.ToString("0#") + "/" + cmbBedDate.Value.Day.ToString();
+                BedHesab.BedNoID = Convert.ToInt32(cmbBedNo.SelectedValue);
+                if (txtSayer.Enabled)
+                {
+                    if (txtSayer.Text == string.Empty)
+                    {
+                        MessageBox.Show("لطفا فیلد عنوان بدهی را وارد نمایید");
+                    }
+                    else
+                    {
+                        BedHesab.Sayer = txtSayer.Text;
+                    }
+
+                }
+                else
+                {
+                    BedHesab.Sayer = null;
+                }
+                dbContext.PersonHesabs.Add(BedHesab);
+                dbContext.SaveChanges();
+                DissplayBed();
+            }
+        }
         private void frmPersonDetails_Load(object sender, EventArgs e)
         {        
             DispalyPerson();
             AddComboboxNoZamin();
             AddComboboxJaygahZamin();
             DisplayZamin();
-        
-        }
+            AddComboboxNoBed();
+            DissplayBed();
 
+
+        }
         private void cmdJaygahZamin_SelectedValueChanged(object sender, EventArgs e)
         {
             SettxtAbbaha();
@@ -272,6 +346,59 @@ namespace Dehyari
             {
                 //MessageBox.Show("خطایی در درج اطلاعات رخ داده است.");
             }
+        }
+        private void txtMasahat_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtMasahat.Text != string.Empty)
+                {
+                    txtMasahat.Text = string.Format("{0:N0}", double.Parse(txtMasahat.Text.Replace(",", "")));
+                    txtMasahat.Select(txtMasahat.TextLength, 0);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("خطایی در درج اطلاعات رخ داده است.");
+            }
+        }
+        private void txtBed_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtBed.Text != string.Empty)
+                {
+                    txtBed.Text = string.Format("{0:N0}", double.Parse(txtBed.Text.Replace(",", "")));
+                    txtBed.Select(txtBed.TextLength, 0);
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("خطایی در درج اطلاعات رخ داده است.");
+            }
+        }
+        private void cmbBedNo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Convert.ToInt32(cmbBedNo.SelectedValue) == 5)
+                {
+                    txtSayer.Enabled = true;
+                }
+                else
+                {
+                    txtSayer.Enabled = false;
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+           
+        }
+        private void btnAddBed_Click(object sender, EventArgs e)
+        {
+            AddBed();   
         }
     }
 }

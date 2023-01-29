@@ -128,6 +128,14 @@
     <Compile Include="Migrations\202212131854251_FluenAPITERST1.designer.cs">
       <DependentUpon>202212131854251_FluenAPITERST1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202301281817488_AddSayerINTOPersonHesab.cs" />
+    <Compile Include="Migrations\202301281817488_AddSayerINTOPersonHesab.designer.cs">
+      <DependentUpon>202301281817488_AddSayerINTOPersonHesab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301291737214_IdentityOfPersonHesab.cs" />
+    <Compile Include="Migrations\202301291737214_IdentityOfPersonHesab.designer.cs">
+      <DependentUpon>202301291737214_IdentityOfPersonHesab.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DomainClass\NameSadere.cs" />
     <Compile Include="DomainClass\NameVarede.cs" />
@@ -173,6 +181,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202212131854251_FluenAPITERST1.resx">
       <DependentUpon>202212131854251_FluenAPITERST1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301281817488_AddSayerINTOPersonHesab.resx">
+      <DependentUpon>202301281817488_AddSayerINTOPersonHesab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301291737214_IdentityOfPersonHesab.resx">
+      <DependentUpon>202301291737214_IdentityOfPersonHesab.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
