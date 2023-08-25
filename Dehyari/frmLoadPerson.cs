@@ -190,8 +190,9 @@ namespace Dehyari
         }
         private void dgvLoadPeople_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            dgvLoadPeople.CurrentRow.Selected = true;
 
-            frmPersonDetails  frm = new frmPersonDetails();
+            frmPersonDetails frm = new frmPersonDetails();
             frm.PersonID = personID;
             frm.Text = "جزئیات ";
             if (personID != -1)

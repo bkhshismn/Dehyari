@@ -35,15 +35,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BehComponents">
+      <HintPath>C:\Users\HP\Desktop\PersianCalenderComponent\PersianCalender\PersianCalender\bin\Debug\BehComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="DateTimeSelector">
+      <HintPath>C:\Users\HP\Desktop\DateTimeSelector\DateTimeSelector\DateTimeSelector.dll</HintPath>
+    </Reference>
     <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\DotNetBar for Windows Forms\DevComponents.DotNetBar2.dll</HintPath>
+      <HintPath>bin\Debug\DevComponents.DotNetBar2.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PARSGREEN">
+      <HintPath>..\..\..\Hoghoghi8EditHesabdari1.1\Hoghoghi\Hoghoghi\bin\Debug\PARSGREEN.dll</HintPath>
     </Reference>
     <Reference Include="PersianDate">
       <HintPath>C:\Users\HP\Desktop\cp (Www.SourceBaran.Com)\کامپوننت تقویم شمسی بسیار زیبا\PersianDate\PersianDate\PersianDate\PersianDate\bin\Debug\PersianDate.dll</HintPath>
@@ -54,6 +63,7 @@
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -66,19 +76,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbBaha.cs" />
+    <Compile Include="Accounting.cs" />
+    <Compile Include="Date.cs" />
+    <Compile Include="DomainClass\BedNo.cs" />
+    <Compile Include="DomainClass\Bime.cs" />
+    <Compile Include="DomainClass\Daryaft.cs" />
+    <Compile Include="DehyariContext.cs" />
+    <Compile Include="DomainClass\DehyariHesab.cs" />
+    <Compile Include="DomainClass\Delivery.cs" />
     <Compile Include="frmAddPerson.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmAddPerson.Designer.cs">
       <DependentUpon>frmAddPerson.cs</DependentUpon>
     </Compile>
-    <Compile Include="DomainClass\BedNo.cs" />
-    <Compile Include="DomainClass\Bime.cs" />
     <Compile Include="C__MigrationHistory.cs" />
-    <Compile Include="DomainClass\Daryaft.cs" />
-    <Compile Include="DehyariContext.cs" />
-    <Compile Include="DomainClass\DehyariHesab.cs" />
-    <Compile Include="DomainClass\Delivery.cs" />
     <Compile Include="frmJaygahZamin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,11 +103,6 @@
     <Compile Include="frmPersonDetails.Designer.cs">
       <DependentUpon>frmPersonDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="DomainClass\Hazine.cs" />
-    <Compile Include="DomainClass\IsKhanedar.cs" />
-    <Compile Include="DomainClass\IsMarried.cs" />
-    <Compile Include="DomainClass\IsSarparastKhanevar.cs" />
-    <Compile Include="DomainClass\JaygahZamin.cs" />
     <Compile Include="frmLoadPerson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +115,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="DomainClass\Hazine.cs" />
+    <Compile Include="DomainClass\IsKhanedar.cs" />
+    <Compile Include="DomainClass\IsMarried.cs" />
+    <Compile Include="DomainClass\IsSarparastKhanevar.cs" />
+    <Compile Include="DomainClass\JaygahZamin.cs" />
     <Compile Include="Migrations\202211261734143_First.cs" />
     <Compile Include="Migrations\202211261734143_First.designer.cs">
       <DependentUpon>202211261734143_First.cs</DependentUpon>
@@ -136,6 +148,42 @@
     <Compile Include="Migrations\202301291737214_IdentityOfPersonHesab.designer.cs">
       <DependentUpon>202301291737214_IdentityOfPersonHesab.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202302261546565_RelationPEsronHesabToDehyariHesab.cs" />
+    <Compile Include="Migrations\202302261546565_RelationPEsronHesabToDehyariHesab.designer.cs">
+      <DependentUpon>202302261546565_RelationPEsronHesabToDehyariHesab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202302261841164_RelationPEsronHesabToDehyariHesab1.cs" />
+    <Compile Include="Migrations\202302261841164_RelationPEsronHesabToDehyariHesab1.designer.cs">
+      <DependentUpon>202302261841164_RelationPEsronHesabToDehyariHesab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202302261846271_RelationPEsronHesabToDehyariHesab2.cs" />
+    <Compile Include="Migrations\202302261846271_RelationPEsronHesabToDehyariHesab2.designer.cs">
+      <DependentUpon>202302261846271_RelationPEsronHesabToDehyariHesab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202302261848222_RelationPEsronHesabToDehyariHesab3.cs" />
+    <Compile Include="Migrations\202302261848222_RelationPEsronHesabToDehyariHesab3.designer.cs">
+      <DependentUpon>202302261848222_RelationPEsronHesabToDehyariHesab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303020756432_RelationPEsronHesabToDehyariHesab5.cs" />
+    <Compile Include="Migrations\202303020756432_RelationPEsronHesabToDehyariHesab5.designer.cs">
+      <DependentUpon>202303020756432_RelationPEsronHesabToDehyariHesab5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303020801533_RelationPEsronHesabToDehyariHesab6.cs" />
+    <Compile Include="Migrations\202303020801533_RelationPEsronHesabToDehyariHesab6.designer.cs">
+      <DependentUpon>202303020801533_RelationPEsronHesabToDehyariHesab6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303020815281_one.cs" />
+    <Compile Include="Migrations\202303020815281_one.designer.cs">
+      <DependentUpon>202303020815281_one.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202303020818405_one1.cs" />
+    <Compile Include="Migrations\202303020818405_one1.designer.cs">
+      <DependentUpon>202303020818405_one1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305211739473_changeBEdNoTitle.cs" />
+    <Compile Include="Migrations\202305211739473_changeBEdNoTitle.designer.cs">
+      <DependentUpon>202305211739473_changeBEdNoTitle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DomainClass\NameSadere.cs" />
     <Compile Include="DomainClass\NameVarede.cs" />
@@ -145,7 +193,7 @@
     <Compile Include="DomainClass\OnvanName.cs" />
     <Compile Include="DomainClass\Person.cs" />
     <Compile Include="DomainClass\PersonHesab.cs" />
-    <Compile Include="DomainClass\Program.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DomainClass\Sex.cs" />
     <Compile Include="DomainClass\SM.cs" />
@@ -187,6 +235,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202301291737214_IdentityOfPersonHesab.resx">
       <DependentUpon>202301291737214_IdentityOfPersonHesab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302261546565_RelationPEsronHesabToDehyariHesab.resx">
+      <DependentUpon>202302261546565_RelationPEsronHesabToDehyariHesab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302261841164_RelationPEsronHesabToDehyariHesab1.resx">
+      <DependentUpon>202302261841164_RelationPEsronHesabToDehyariHesab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302261846271_RelationPEsronHesabToDehyariHesab2.resx">
+      <DependentUpon>202302261846271_RelationPEsronHesabToDehyariHesab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302261848222_RelationPEsronHesabToDehyariHesab3.resx">
+      <DependentUpon>202302261848222_RelationPEsronHesabToDehyariHesab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303020756432_RelationPEsronHesabToDehyariHesab5.resx">
+      <DependentUpon>202303020756432_RelationPEsronHesabToDehyariHesab5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303020801533_RelationPEsronHesabToDehyariHesab6.resx">
+      <DependentUpon>202303020801533_RelationPEsronHesabToDehyariHesab6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303020815281_one.resx">
+      <DependentUpon>202303020815281_one.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202303020818405_one1.resx">
+      <DependentUpon>202303020818405_one1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305211739473_changeBEdNoTitle.resx">
+      <DependentUpon>202305211739473_changeBEdNoTitle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

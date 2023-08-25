@@ -5,7 +5,6 @@ namespace Dehyari
     using System.ComponentModel.DataAnnotations;
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
-    using System.Data.Entity.ModelConfiguration;
 
     [Table("Person")]
     public partial class Person
@@ -20,7 +19,8 @@ namespace Dehyari
 
         public int PersonID { get; set; }
 
-        //[StringLength(60)]
+        [Required]
+        [StringLength(65)]
         public string Name { get; set; }
 
         [StringLength(100)]
@@ -69,13 +69,5 @@ namespace Dehyari
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Zamin> Zamins { get; set; }
-    }
-    public  class PersonConfig:EntityTypeConfiguration<Person>
-    {
-        public PersonConfig()
-        {
-            HasKey(c => c.PersonID);
-            Property(c => c.Name).IsRequired().HasMaxLength(65);
-        }
     }
 }

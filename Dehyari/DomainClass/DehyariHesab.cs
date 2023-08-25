@@ -22,8 +22,12 @@ namespace Dehyari
 
         public int? DaryaftID { get; set; }
 
+        public int? PersonHesabID { get; set; }
+
         public virtual Daryaft Daryaft { get; set; }
 
         public virtual Hazine Hazine { get; set; }
+
+        public virtual PersonHesab PersonHesab { get; set; }
     }
 }

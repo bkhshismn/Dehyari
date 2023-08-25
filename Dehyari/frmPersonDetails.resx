@@ -117,19 +117,77 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="cmbBedDate.Value" mimetype="application/x-microsoft.net.object.binary.base64">
+  <metadata name="dtpDateSMS.SelectedDateInDateTime" type="System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>2023-03-16</value>
+  </metadata>
+  <metadata name="dtpDateSMS.SelectedDateInStringPersian" xml:space="preserve">
+    <value>1401/12/25</value>
+  </metadata>
+  <metadata name="dtpDateSMS.SelectedDateInStringEnglish" xml:space="preserve">
+    <value>2023/03/16</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="dtpDateSMS.ClearButtonImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        AAEAAAD/////AQAAAAAAAAAMAgAAAEJQZXJzaWFuRGF0ZSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0dXJl
-        PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAABhGcmVlQ29udHJvbHMuUGVyc2lhbkRhdGUJ
-        AAAACXdlZWtBcnJheQttb250aHNBcnJheQR5ZWFyBW1vbnRoA2RheQRob3VyBm1pbnV0ZQZzZWNvbmQJ
-        ZGF5T2ZXZWVrBgYAAAAAAAADCAgICAgIEFN5c3RlbS5EYXlPZldlZWsCAAAACQMAAAAJBAAAAAEAAAAB
-        AAAAAQAAAAAAAAAAAAAAAAAAAAT7////EFN5c3RlbS5EYXlPZldlZWsBAAAAB3ZhbHVlX18ACAUAAAAR
-        AwAAAAcAAAAGBgAAAAjYtNmG2KjZhwYHAAAADNuM2qnYtNmG2KjZhwYIAAAADNiv2YjYtNmG2KjZhwYJ
-        AAAADdiz2Ycg2LTZhtio2YcGCgAAABDahtmH2KfYsdi02YbYqNmHBgsAAAAO2b7Zhtis2LTZhtio2YcG
-        DAAAAAjYrNmF2LnZhxEEAAAADAAAAAYNAAAADtmB2LHZiNix2K/bjNmGBg4AAAAQ2KfYsdiv24zYqNmH
-        2LTYqgYPAAAACtiu2LHYr9in2K8GEAAAAAbYqtuM2LEGEQAAAArZhdix2K/Yp9ivBhIAAAAM2LTZh9ix
-        24zZiNixBhMAAAAG2YXZh9ixBhQAAAAI2KLYqNin2YYGFQAAAAbYotiw2LEGFgAAAATYr9uMBhcAAAAI
-        2KjZh9mF2YYGGAAAAArYp9iz2YHZhtivCw==
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6
+        JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAAsMAAALDAE/QCLIAAAB6ElE
+        QVQ4T2OgCvhvym/wz1hwzz8jfqf/DAxMUGHiwP9QBmag5vT/aV7//8U5//5nyh8IEoNKo4D/9gws/034
+        lf4ZCeRBhSCC/0yEkv4ZC2z7n+T6/1+Sy59/JgJV6Ib8t5fnALnwX5zjb6D8HKgwBPwzEpH8ZyRkATYk
+        2OT//0ir/0BXbfynJ84NlreQ4fznIL/xX7Dxb6Ca7v9aojxgjejgvxYD2z8T/oJ/rsq/QQYBbVr2z1BA
+        75+J4GSwoSDaWJAfqhw7AAYi4z9DIU2gC86DveSj++ufj95nIH8dyCVQZYTBf2N+B5CT//vqgLxz758F
+        nxBUijD4b86vAHT+JaCT/30z4P//2YAHZMgtqDRuAEoDQD/LAwPq6j9L8T/PtXn2/DPlMwEF7kttoCFG
+        ApkgL0KVY4L/pqIS/8xFzn91lP9/VYXz9m5xZgdQTICxicD0Cwpsvy8psZhAlaMCcDxbiKwG4i9n5dk+
+        nZJjC4ZKQeTMhPgeq3PevqrEsWO9IIMsRoACnef9zVz0/0VFtv+XFTnWw9IADEC8x6eyX4r56xVVTjOU
+        JA+Of2PB1ofqnP+vKHFe/2cqooaiAApAqfODHve8fybCphjywGRqBAz1if9MBez+WQnz4goscH4wluSC
+        cikFDAwAwF/Sd1eopa0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="cmbDaryaftDate.SelectedDateInDateTime" type="System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>2023-03-16</value>
+  </metadata>
+  <metadata name="cmbDaryaftDate.SelectedDateInStringPersian" xml:space="preserve">
+    <value>1401/12/25</value>
+  </metadata>
+  <metadata name="cmbDaryaftDate.SelectedDateInStringEnglish" xml:space="preserve">
+    <value>2023/03/16</value>
+  </metadata>
+  <data name="cmbDaryaftDate.ClearButtonImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6
+        JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAAsMAAALDAE/QCLIAAAB6ElE
+        QVQ4T2OgCvhvym/wz1hwzz8jfqf/DAxMUGHiwP9QBmag5vT/aV7//8U5//5nyh8IEoNKo4D/9gws/034
+        lf4ZCeRBhSCC/0yEkv4ZC2z7n+T6/1+Sy59/JgJV6Ib8t5fnALnwX5zjb6D8HKgwBPwzEpH8ZyRkATYk
+        2OT//0ir/0BXbfynJ84NlreQ4fznIL/xX7Dxb6Ca7v9aojxgjejgvxYD2z8T/oJ/rsq/QQYBbVr2z1BA
+        75+J4GSwoSDaWJAfqhw7AAYi4z9DIU2gC86DveSj++ufj95nIH8dyCVQZYTBf2N+B5CT//vqgLxz758F
+        nxBUijD4b86vAHT+JaCT/30z4P//2YAHZMgtqDRuAEoDQD/LAwPq6j9L8T/PtXn2/DPlMwEF7kttoCFG
+        ApkgL0KVY4L/pqIS/8xFzn91lP9/VYXz9m5xZgdQTICxicD0Cwpsvy8psZhAlaMCcDxbiKwG4i9n5dk+
+        nZJjC4ZKQeTMhPgeq3PevqrEsWO9IIMsRoACnef9zVz0/0VFtv+XFTnWw9IADEC8x6eyX4r56xVVTjOU
+        JA+Of2PB1ofqnP+vKHFe/2cqooaiAApAqfODHve8fybCphjywGRqBAz1if9MBez+WQnz4goscH4wluSC
+        cikFDAwAwF/Sd1eopa0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <metadata name="cmbBedDate.SelectedDateInDateTime" type="System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>2023-03-16</value>
+  </metadata>
+  <metadata name="cmbBedDate.SelectedDateInStringPersian" xml:space="preserve">
+    <value>1401/12/25</value>
+  </metadata>
+  <metadata name="cmbBedDate.SelectedDateInStringEnglish" xml:space="preserve">
+    <value>2023/03/16</value>
+  </metadata>
+  <data name="cmbBedDate.ClearButtonImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6
+        JQAAgIMAAPn/AACA6QAAdTAAAOpgAAA6mAAAF2+SX8VGAAAACXBIWXMAAAsMAAALDAE/QCLIAAAB6ElE
+        QVQ4T2OgCvhvym/wz1hwzz8jfqf/DAxMUGHiwP9QBmag5vT/aV7//8U5//5nyh8IEoNKo4D/9gws/034
+        lf4ZCeRBhSCC/0yEkv4ZC2z7n+T6/1+Sy59/JgJV6Ib8t5fnALnwX5zjb6D8HKgwBPwzEpH8ZyRkATYk
+        2OT//0ir/0BXbfynJ84NlreQ4fznIL/xX7Dxb6Ca7v9aojxgjejgvxYD2z8T/oJ/rsq/QQYBbVr2z1BA
+        75+J4GSwoSDaWJAfqhw7AAYi4z9DIU2gC86DveSj++ufj95nIH8dyCVQZYTBf2N+B5CT//vqgLxz758F
+        nxBUijD4b86vAHT+JaCT/30z4P//2YAHZMgtqDRuAEoDQD/LAwPq6j9L8T/PtXn2/DPlMwEF7kttoCFG
+        ApkgL0KVY4L/pqIS/8xFzn91lP9/VYXz9m5xZgdQTICxicD0Cwpsvy8psZhAlaMCcDxbiKwG4i9n5dk+
+        nZJjC4ZKQeTMhPgeq3PevqrEsWO9IIMsRoACnef9zVz0/0VFtv+XFTnWw9IADEC8x6eyX4r56xVVTjOU
+        JA+Of2PB1ofqnP+vKHFe/2cqooaiAApAqfODHve8fybCphjywGRqBAz1if9MBez+WQnz4goscH4wluSC
+        cikFDAwAwF/Sd1eopa0AAAAASUVORK5CYII=
 </value>
   </data>
 </root>

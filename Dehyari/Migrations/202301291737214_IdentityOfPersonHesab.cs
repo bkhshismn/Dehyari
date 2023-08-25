@@ -7,7 +7,7 @@
     {
         public override void Up()
         {
-            DropPrimaryKey("dbo.PersonHesab");
+            //DropPrimaryKey("dbo.PersonHesab");
             AlterColumn("dbo.PersonHesab", "HesabID", c => c.Int(nullable: false, identity: true));
             AddPrimaryKey("dbo.PersonHesab", "HesabID");
         }

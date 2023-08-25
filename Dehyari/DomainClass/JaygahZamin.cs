@@ -20,7 +20,8 @@ namespace Dehyari
         [Column("JaygahZamin")]
         [StringLength(50)]
         public string JaygahZamin1 { get; set; }
-        public Int64 NerkhAb { get; set; }
+
+        public long NerkhAb { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Zamin> Zamins { get; set; }

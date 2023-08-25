@@ -8,7 +8,7 @@ namespace Dehyari
     public partial class DehyariContext : DbContext
     {
         public DehyariContext()
-            : base("name=DehyariContext3")
+            : base("name=DehyariContext4")
         {
         }
 
@@ -40,7 +40,6 @@ namespace Dehyari
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Configurations.Add(new PersonConfig());
             modelBuilder.Entity<Delivery>()
                 .HasMany(e => e.SMS)
                 .WithOptional(e => e.Delivery)
@@ -50,10 +49,10 @@ namespace Dehyari
                 .HasOptional(e => e.Daryaft)
                 .WithRequired(e => e.NoDaryaft);
 
-            //modelBuilder.Entity<Sex>()
-            //    .HasMany(e => e.Sex1)
-            //    .WithOptional(e => e.S)
-            //    .HasForeignKey(e => e.);
+            modelBuilder.Entity<PersonHesab>()
+                .HasMany(e => e.DehyariHesabs)
+                .WithOptional(e => e.PersonHesab)
+                .HasForeignKey(e => e.PersonHesabID);
         }
     }
 }

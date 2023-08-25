@@ -17,7 +17,7 @@ namespace Dehyari
 
         public int BedNoID { get; set; }
 
-        [Column("BedNo")]
+        [Column("BedNoTitle")]
         [StringLength(50)]
         public string BedNo1 { get; set; }
 
