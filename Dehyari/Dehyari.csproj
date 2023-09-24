@@ -84,6 +84,7 @@
     <Compile Include="DehyariContext.cs" />
     <Compile Include="DomainClass\DehyariHesab.cs" />
     <Compile Include="DomainClass\Delivery.cs" />
+    <Compile Include="DomainClass\SMSHeaderFooter.cs" />
     <Compile Include="frmAddPerson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +185,10 @@
     <Compile Include="Migrations\202305211739473_changeBEdNoTitle.designer.cs">
       <DependentUpon>202305211739473_changeBEdNoTitle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202309241513085_ADD-SMSHeaderFoooter-Table.cs" />
+    <Compile Include="Migrations\202309241513085_ADD-SMSHeaderFoooter-Table.designer.cs">
+      <DependentUpon>202309241513085_ADD-SMSHeaderFoooter-Table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="DomainClass\NameSadere.cs" />
     <Compile Include="DomainClass\NameVarede.cs" />
@@ -262,6 +267,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202305211739473_changeBEdNoTitle.resx">
       <DependentUpon>202305211739473_changeBEdNoTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202309241513085_ADD-SMSHeaderFoooter-Table.resx">
+      <DependentUpon>202309241513085_ADD-SMSHeaderFoooter-Table.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

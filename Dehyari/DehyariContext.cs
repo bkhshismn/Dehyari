@@ -1,3 +1,4 @@
+using Dehyari.DomainClass;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
@@ -37,6 +38,7 @@ namespace Dehyari
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<Tahsilatt> Tahsilatts { get; set; }
         public virtual DbSet<Zamin> Zamins { get; set; }
+        public virtual DbSet<SMSHeaderFooter> SMSHeaderFooter { get; set; } 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

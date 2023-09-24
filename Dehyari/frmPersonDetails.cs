@@ -482,6 +482,7 @@ namespace Dehyari
             {
                 PersonHesab BesHesab = new PersonHesab();
                 BesHesab.PersonID = PersonID;
+                if (txtBes.Text != string.Empty)
                 BesHesab.Bes = Convert.ToInt64(txtBes.Text.Replace(",", ""));
                 BesHesab.Date = changedate.Changedate(cmbDaryaftDate.Text); ;
                 BesHesab.BedNoID = Convert.ToInt32(cmbBesNo.SelectedValue);
@@ -745,17 +746,40 @@ namespace Dehyari
 
             }
         }
-
-        private void btnSendSMS_Click(object sender, EventArgs e)
+        private int SendSMS(string to, string SMSText)
         {
+            int result = 0;
             string[] _to = new string[1];
- 
-            _to[0] = "09391191129";
-            string _text = txtSMS.Text;
+            _to[0] = to;
+            string _text = SMSText;
             bool _isflash = false;
             string _udh = String.Empty;
+            //try
+            //{
             var _ApiSMS = new PARSGREEN.API_SendSMS.SendSMS();
             int _result = _ApiSMS.SendGroupSmsSimple(Signature, ParsgreenSendingPhoneNumber.ToString(), _to, _text, _isflash, _udh);
+            result = _result;
+            
+            //}
+            //catch (Exception)
+            //{
+
+            //    throw;
+            //}
+            return result;
+        }
+        private void btnSendSMS_Click(object sender, EventArgs e)
+        {
+            string MobileNumber = lblMobile.Text;
+            string SMSText = txtSMS.Text;
+
+            int result = SendSMS(MobileNumber, SMSText);
+            if (result == 1)
+            { 
+
+            }
+
+           
         }
     }
 }
